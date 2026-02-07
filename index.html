@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Portfolio • Bakari Salim Mahaba</title>
+  <meta name="description"
+    content="Portfolio of Bakari Salim Mahaba — Data Scientist specializing in AI-driven automation, machine learning, and intelligent systems. View projects, experience, and skills." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- Fonts (with system fallbacks if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="theme-dark">
+  <!-- Top nav (centered) that hides on scroll down and shows on scroll up) -->
+  <header class="top-nav" role="banner" aria-label="Primary">
+    <nav class="top-nav__inner" aria-label="Section navigation">
+      <a href="#about" class="nav-icon" title="About" aria-label="About" data-nav>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-5.33 0-8 2.67-8 5v1h16v-1c0-2.33-2.67-5-8-5Z" />
+        </svg>
+      </a>
+      <a href="#projects" class="nav-icon" title="Projects" aria-label="Projects" data-nav>
+        <!-- Folder Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z" />
+        </svg>
+      </a>
+      <a href="#experience" class="nav-icon" title="Experience" aria-label="Experience" data-nav>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16v2H4Zm0 4h10v2H4Zm0 4h16v2H4Z" />
+        </svg>
+      </a>
+      <a href="#education" class="nav-icon" title="Education" aria-label="Education" data-nav>
+        <!-- Hat Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
+        </svg>
+      </a>
+      <a href="#certifications" class="nav-icon" title="Certifications" aria-label="Certifications" data-nav id="certifications">
+        <!-- Badge/Certificate Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path
+            d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+        </svg>
+      </a>
+      <a href="#publications" class="nav-icon" title="Publications" aria-label="Publications" data-nav>
+        <!-- Book Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path
+            d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+        </svg>
+      </a>
+      <a href="#tools" class="nav-icon" title="Tools" aria-label="Tools" data-nav>
+        <!-- Tools/Settings Icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z" />
+        </svg>
+      </a>
+      <button class="nav-icon" id="toggleTheme" title="Toggle theme" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a1 1 0 0 1 1 1 8 8 0 1 0 8 8 1 1 0 0 1 1-1 10 10 0 1 1-10-10Z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+
+  <div class="layout">
+    <!-- Left sticky profile panel -->
+    <aside class="left-rail" aria-label="Profile">
+      <div class="profile-card">
+        <div class="avatar">
+          <img src="assets/profilePhoto.png" alt="Bakari Salim Mahaba" />
+        </div>
+        <div class="identity">
+          <h1 class="name">Bakari Salim Mahaba</h1>
+          <p class="role">Data Analyst • AI & Automation Developer • Web Developer</p>
+        </div>
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/mahaba-salim/" aria-label="LinkedIn" class="social social-linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+          </a>
+          <a href="https://github.com/mahaba254002" aria-label="GitHub" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6a3.2 3.2 0 0 0-1.34-1.76c-1.09-.74.08-.73.08-.73a2.5 2.5 0 0 1 1.83 1.23 2.53 2.53 0 0 0 3.46 1 2.53 2.53 0 0 1 .76-1.6C7.1 16.7 4.33 15.7 4.33 11.3a4.69 4.69 0 0 1 1.25-3.24 4.36 4.36 0 0 1 .12-3.2s1.02-.33 3.34 1.24a11.5 11.5 0 0 1 6.08 0c2.32-1.57 3.34-1.24 3.34-1.24a4.36 4.36 0 0 1 .12 3.2 4.69 4.69 0 0 1 1.25 3.24c0 4.42-2.77 5.4-5.42 5.7a2.83 2.83 0 0 1 .8 2.2v3.27c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z" />
+            </svg>
+          </a>
+        </div>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Contact</a>
+          <a href="#" class="btn" id="downloadCV" download>Download CV</a>
+        </div>
+        <p class="bio">Transforming data into intelligent solutions through AI, automation, and analytics.</p>
+
+      </div>
+    </aside>
+
+
+    <!-- Right scrollable content -->
+    <main class="content" id="content" tabindex="-1">
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2 class="eyebrow">ABOUT</h2>
+        <h3 class="hero-title"><span>DATA</span> SCIENTIST</h3>
+        <p class="lead">Data Scientist specializing in AI-driven automation and intelligent systems. I turn raw data into actionable insights using advanced analytics and machine learning, while building scalable automation workflows with Power Automate and UiPath. My experience includes developing deep learning models for real-time recognition and delivering production-ready AI solutions that drive measurable business impact. Beyond data science, I enjoy building dynamic, interactive web applications. Outside of work, I stay energized through fitness and exploring new destinations.</p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-value" data-count-to="4">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" data-count-to="5">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" data-count-to="3">0</div>
+            <div class="stat-label">Worldwide Clients</div>
+          </div>
+        </div>
+
+
+        <div class="cards-grid">
+          <article class="card accent-orange">
+            <h4>Dynamic Dashboards</h4>
+            <p>From raw sheets to insightful dashboards with clear KPIs and drill‑downs.</p>
+          </article>
+          <article class="card accent-lime">
+            <h4>Automation</h4>
+            <p>Macros & scripts that remove repetitive work, reduce errors, and save hours.</p>
+          </article>
+          <article class="card accent-blue">
+            <h4>Artificial Intelligence</h4>
+            <p>Building and Integrating AI models to optimize workflows and generate intelligent insights.</p>
+          </article>
+          <article class="card accent-orange">
+            <h4>Web Development</h4>
+            <p>Building responsive, user-centric web applications with modern frameworks and clean code.</p>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2 class="eyebrow">RECENT</h2>
+        <h3 class="section-title">PROJECTS</h3>
+        <ul class="proj-list">
+          <li class="proj-item">
+            <div class="proj-thumb" aria-hidden="true">
+              <img alt="Automated Data Entry System cover" src="assets/qaf.gif" />
+            </div>
+            <div class="proj-meta">
+              <h4>Automated Data Entry System</h4>
+              <p>Streamlined data automation fetching from Excel to client platforms.</p>
+            </div>
+          </li>
+          <li class="proj-item">
+            <div class="proj-thumb" aria-hidden="true">
+              <img alt="RasaVision cover" src="assets/malaysianFood.gif" />
+            </div>
+            <div class="proj-meta">
+              <h4>RasaVision: Malaysian Food Recognition System</h4>
+              <p>Intelligent food recognition using YOLO and Deep Learning.</p>
+            </div>
+          </li>
+          <li class="proj-item">
+            <div class="proj-thumb" aria-hidden="true">
+              <img alt="Road Accident Dashboard and Analysis cover" src="assets/roadAccident.png" />
+            </div>
+            <div class="proj-meta">
+              <h4>Road Accident Dashboard and Analysis</h4>
+              <p>Leveraging Excel for data visualization and insightful representations.</p>
+            </div>
+          </li>
+          <li class="proj-item">
+            <div class="proj-thumb" aria-hidden="true">
+              <img alt="Watchify AI Movie Recommendation cover" src="assets/movieRec.png" />
+            </div>
+            <div class="proj-meta">
+              <h4>Watchify - AI Movie Recommendation System</h4>
+              <p>Intelligent content recommendation using machine learning and cosine similarity.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <h2 class="eyebrow">WORK</h2>
+        <h3 class="section-title">EXPERIENCE</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="time">2025 — 2026</div>
+            <div class="tl-body">
+              <h4>AI and Automation Developer</h4>
+              <p>Maintained and developed automation workflows using power automate, office scripts and uipath.<br>Fine-tuned AI agents using copilot studio based on client requirements.<br>Designed intelligent automation solutions to streamline business processes.<br>Collaborated with stakeholders to optimize workflow efficiency and performance.</p>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <h2 class="eyebrow">ACADEMIC</h2>
+        <h3 class="section-title">EDUCATION</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="time">2023 — 2026</div>
+            <div class="tl-body">
+              <h4>Bachelor of Computer Science(Data Science)</h4>
+              <p>Albukhary International University</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="time">2017 — 2021</div>
+            <div class="tl-body">
+              <h4>High School Certificate</h4>
+              <p>Kwale High School</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section" hidden>
+        <h2 class="eyebrow">CREDENTIALS</h2>
+        <h3 class="section-title">CERTIFICATIONS</h3>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="time">20XX</div>
+            <div class="tl-body">
+              <h4>[Certification Name]</h4>
+              <p>[Issuing Organization]</p>
+              <p style="font-size: 0.85rem; margin-top: 4px; color: var(--text);">Credential ID: <span
+                  style="font-family: monospace;">ABC-12345-XYZ</span></p>
+              <a href="#"
+                style="display: inline-block; margin-top: 6px; font-size: 0.85rem; color: var(--accent); text-decoration: none;">View
+                Credential ↗</a>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <h2 class="eyebrow">RESEARCH</h2>
+        <h3 class="section-title">PUBLICATIONS</h3>
+        <div class="time">Dec 2025</div>
+        <div class="tl-body">
+          <h4>Enhancing Diagnostic Accuracy for Breast Cancer Using Classical-Quantum Hybrid and Transfer Learning
+            Technique</h4>
+          <p>Published in <em>Journal of Soft Computing and Data Mining</em></p>
+          <a href="https://www.researchgate.net/publication/399605706_Enhancing_Diagnostic_Accuracy_for_Breast_Cancer_Using_Classical-Quantum_Hybrid_and_Transfer_Learning_Technique"
+            target="_blank" rel="noopener"
+            style="display: inline-block; margin-top: 6px; font-size: 0.85rem; color: var(--accent); text-decoration: none;">Read
+            Paper ↗</a>
+        </div>
+        </li>
+        </ol>
+      </section>
+
+
+
+      <!-- TOOLS -->
+      <section id="tools" class="section">
+        <h2 class="eyebrow">STACK</h2>
+        <h3 class="section-title">TOOLS & LANGUAGES</h3>
+        <div class="tools-grid">
+          <!-- Automation -->
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/power_automate.png" alt="Power Automate"></div>
+            <span>Power Automate</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/uipath.png" alt="UiPath"></div>
+            <span>UiPath</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <img src="assets/excel.png" alt="Microsoft Excel">
+            </div>
+            <span>Microsoft Excel</span>
+          </div>
+
+          <!-- Web & Languages -->
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/javascript.png" alt="JavaScript"></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/typeScript.png" alt="TypeScript"></div>
+            <span>TypeScript</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <span>HTML & CSS</span>
+          </div>
+
+          <!-- Data & AI -->
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/python_programming.png" alt="Python"></div>
+            <span>Python</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/tensorflow_logo.png" alt="TensorFlow"></div>
+            <span>TensorFlow</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/powebi.png" alt="Power BI"></div>
+            <span>Power BI</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/r_programming.png" alt="R Language"></div>
+            <span>R Language</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><img src="assets/mysql.png" alt="MySQL"></div>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="section">
+        <h2 class="eyebrow">LET'S</h2>
+        <h3 class="section-title">CONNECT</h3>
+        <form class="contact-form" aria-label="Contact form" action="https://formspree.io/f/xlgwejbq" method="POST">
+          <div class="grid">
+            <label> Name <input type="text" name="name" placeholder="your name" required></label>
+            <label> Email <input type="email" name="email" placeholder="mahaba@gmail.com" required></label>
+          </div>
+          <label> Message <textarea rows="5" name="message" placeholder="How can I help?" required></textarea></label>
+          <button class="btn btn-primary" type="submit" id="send">Send</button>
+        </form>
+        <p class="copyright">© <span id="year"></span> Bakari Salim Mahaba. All rights reserved.</p>
+      </section>
+    </main>
+  </div>
+
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" class="scroll-top-btn" aria-label="Scroll to Top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+
+  <!-- Project Detail Modal -->
+  <div class="modal" id="modal-project-details" role="dialog" aria-modal="true" hidden>
+    <div class="modal__dialog modal__dialog--lg">
+      <div class="modal__body" style="position: relative;">
+        <button class="modal__close" data-modal-close aria-label="Close"
+          style="position: absolute; top: 16px; right: 16px; z-index: 10;">×</button>
+        <h3 id="proj-title-display" style="margin-bottom: 20px; font-size: 2rem; color: var(--text);">Project Title</h3>
+        <div class="proj-detail-grid">
+          <div class="proj-media">
+            <!-- Placeholder for video or image -->
+            <div class="video-placeholder" id="proj-video-container">
+              <span>Video Demo Loading...</span>
+            </div>
+          </div>
+          <div class="proj-info">
+            <h4
+              style="margin-top: 0; color: var(--accent); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">
+              Description</h4>
+            <p id="proj-desc-display" style="margin-bottom: 24px; color: var(--muted);">Project detailed description
+              goes here.</p>
+
+            <h4
+              style="color: var(--accent); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px;">
+              Tools Used</h4>
+            <div id="proj-tags-display" class="tool-tags" style="margin-bottom: 24px;"></div>
+
+            <div id="proj-github-container">
+              <!-- Dynamically filled -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="beautify.js"></script>
+</body>
+
+</html>
