@@ -1109,8 +1109,21 @@ body.theme-light .msg-agent {
     gap: 16px;
   }
 
+  .modal__body {
+    padding: 12px;
+  }
+
+  .modal__dialog {
+    border-radius: 12px;
+  }
+
   #proj-title-display {
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .proj-media {
+    margin-bottom: 8px;
   }
 }
 

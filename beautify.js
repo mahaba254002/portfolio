@@ -101,6 +101,15 @@ const projectsData = [
     github: "https://github.com/mahaba95/DataAutomation"
   },
   {
+    title: "Sales Performance Dashboard",
+    desc: `A comprehensive Power BI Sales Analytics Dashboard providing a 360-degree view of retail performance, tracking KPIs, and analyzing trends across various dimensions.
+    <br><br>
+    The system utilizes a Star Schema data model with automated relationship mapping between Products, Customers, Geography, and Time to deliver accurate, real-time insights into business health.`,
+    tags: ["Power BI ", "DAX ", "Data Modeling ", "Business Intelligence ", "Power Query "],
+    video: "assets/dashboard.png",
+    github: "https://github.com/mahaba254002/Sales-Dashboard-Power-BI"
+  },
+  {
     title: "RasaVision: Malaysian Food Recognition System",
     desc: "An intelligent food recognition system that identifies 17 traditional Malaysian dishes in real-time. Leveraging YOLO models, it provides fast and accurate classification for cultural food identification.",
     tags: ["Roboflow", "Python", "YoloV12", "YoloV11", "PyTorch"],
@@ -139,7 +148,7 @@ $$('.proj-item').forEach((item, index) => {
 
     // Populate
     pDisplayTitle.textContent = data.title;
-    pDisplayDesc.textContent = data.desc;
+    pDisplayDesc.innerHTML = data.desc;
 
     // Tags
     pDisplayTags.innerHTML = data.tags.map(t => `<span>${t}</span>`).join('');
