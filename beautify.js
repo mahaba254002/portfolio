@@ -98,7 +98,13 @@ const projectsData = [
     desc: "A streamlined automation solution that fetches data from Excel sheets, performs preprocessing and data wrangling, and automatically fills the data into the client platform. Designed to eliminate repetitive manual input, reduce errors, and improve workflow efficiency through intelligent form handling.",
     tags: ["Data Entry", "Automation", "Data Wrangling"],
     video: "assets/QA_evaluation.mp4",
-    github: "https://github.com/mahaba95/DataAutomation"
+  },
+  {
+    title: "European Real Estate Market Dashboard",
+    desc: "A comprehensive data analysis and multi-page Power BI dashboard designed for the European Real Estate Market. It provides strategic insights into property listings, regional price-per-square-meter variations, and rental yields. Includes predictive modeling using Random Forest algorithms to identify primary price drivers.",
+    tags: ["Power BI", "Data Analysis", "Data Modeling", "Predictive Modeling", "Business Intelligence"],
+    video: "assets/realEstate.png",
+    github: "https://github.com/mahaba254002/FP36-Real-Estate-Challenge-Data-Analytics"
   },
   {
     title: "Sales Performance Dashboard",
@@ -115,13 +121,6 @@ const projectsData = [
     tags: ["Roboflow", "Python", "YoloV12", "YoloV11", "PyTorch"],
     video: "assets/Demo_Malaysian_Food_Detection.mp4",
     github: "https://github.com/mahaba254002/RasaVIsion---Malaysian-Food-Recognition-System"
-  },
-  {
-    title: "Road Accident Dashboard and Analysis",
-    desc: "A comprehensive data visualization project focused on transforming complex road accident datasets into actionable insights. Using Microsoft Excel's advanced features, I developed interactive dashboards that highlight critical trends and patterns, enabling data-driven decision-making through clear, aesthetic, and highly accurate visual storytelling.",
-    tags: ["Excel", "Data Visualization", "Data Analysis", "Dashboards"],
-    video: "assets/roadAccident.png",
-    github: "https://github.com/mahaba254002/Data-visualization-with-Excel"
   },
   {
     title: "Watchify - AI Movie Recommendation System",
